@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auto</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="popup" id="popup-1">
+  <div class="overlay" onclick="removePopup()"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">&times;</div>
+    <h1 style="margin-top: 50px;">Консультация эксперта</h1>
+    <p>+992 89 21 21 Наташа</p>
+  </div>
+</div>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a class="logo" href="#">
+          <img class="logo_img" src="images/logo 2.svg" alt="">
+        </a>
+        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
+      </div>
+      <div class="header__content">
+        <h1 class="header__title">
+          авто из сша “под ключ”
+        </h1>
+        <h2 class="header__subtitle">
+          ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%
+        </h2>
+        <p class="header__text">
+          Подбор, покупка, доставка, растаможка, ремонт, оформление по договору
+        </p>
+        <button onclick="togglePopup()" class="button" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</button>
+        <div class="social header__social">
+          <a class="social__link" href="https://www.instagram.com/" target="_blank">
+            <img class="social__img" src="images/icons/instagram.svg" alt="">
+          </a>
+          <a class="social__link" href="https://web.telegram.org/" target="_blank">
+            <img class="social__img" src="images/icons/telegram.svg" alt="">
+          </a>
+          <a class="social__link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
+            <img class="social__img" src="images/icons/whatsapp.svg" alt="">
+          </a>
+          <a class="social__link" href="https://www.facebook.com/campaign/landing.php?campaign_id=1637278002&extra_1=s|c|313958888526|e|faceb|&placement=&creative=313958888526&keyword=faceb&partner_id=googlesem&extra_2=campaignid%3D1637278002%26adgroupid%3D62332989517%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-7687315026%26loc_physical_ms%3D1009827%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI8euGmIuD_AIVTUiRBR0S7A9tEAAYASAAEgJ9LfD_BwE" target="_blank">
+            <img class="social__img" src="images/icons/facebook.svg" alt="">
+          </a>
+        </div>
+        <img class="header__images" src="images/ford-mustang.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <section class="services">
+    <div class="container">
+      <h2 class="title">НАШИ УСЛУГИ</h2>
+      <div class="services__inner">
+        <div class="services__content">
+          <div class="services__content-box">
+            <h6 class="services__content-title">
+              Почему ввоз авто из США?
+            </h6>
+            <div class="services__content-textbox">
+              <p class="services__content-text">
+                Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в несколько раз, как бы парадоксально это не звучало. Это вызвано продуманной логистикой, уровнем развития сервисов по оцениванию состояния авто и самим процессом покупки автомобиля.
+              </p>
+              <p class="services__content-text">
+                Большинство граждан США берут автомобиль в лизинг на несколько лет и все время эксплуатации сама лизинговая компания занимается постоянным ТО автомобиля, вследствие чего, машины из США – один из лучших выборов для автолюбителей Украины.
+              </p>
+            </div>
+          </div>
+          <div class="services__content-box">
+            <h6 class="services__content-title">
+              Из-за чего такая низкая цена?
+            </h6>
+            <div class="services__content-textbox">
+              <div class="services__content-text">
+                Битые автомобили из США выкупаются с аукционов страховых компаний. На этих аукционах машина теряет половину цены даже из-за минимальных повреждений. Если учитывать денежные затраты, а именно выкуп, доставку, таможню и ремонт, то цена аналогичного по состоянию автомобиля в Украине будет выше на 35-50%, а новые будут стоить космических денег.
+              </div>
+            </div>
+            <button class="button button--decor" onclick="togglePopup()">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</button>
+          </div>
+        </div>
+
+        <ol class="services__list">
+          <li class="services__item">
+            <p class="services__item-title">Покупка авто</p>
+             <p class="services__item-text">Подбор автомобиля и экспертная проверка</p> 
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Доставка морем</p>
+            <p class="services__item-text">Расчет оптимальной стоимости доставки авто</p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Растаможка авто</p>
+            <p class="services__item-text">Прохождение таможенного оформления (2-3 дня)</p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Ремонт авто</p>
+            <p class="services__item-text">Комплексный ремонт автомобиля на  СТО</p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Сертификация</p>
+            <p class="services__item-text">Услуга предоставляется по желанию</p>
+          </li>
+          <li class="services__item">
+            <p class="services__item-title">Постановка на учет</p>
+            <p class="services__item-text">Оформление автомобиля в Украине</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="benefits">
+    <div class="container">
+      <div class="benefits__inner">
+        <img class="benefits__images" src="images/auto.png" alt="car">
+
+        <div class="benefits__content">
+          <h2 class="title benefits__title">ПОЧЕМУ МЫ?</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__item-num">650</p>
+              <p class="benefits__item-title">успешно доставленных авто</p>
+              <p class="benefits__item-text">большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны на 100%</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-num">5</p>
+              <p class="benefits__item-title">лет на рынке Украины</p>
+              <p class="benefits__item-text">Работаем по всей территории Украины, работаем по договору с клиентами</p>
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__item-num">100 %</p>
+              <p class="benefits__item-title">доверия клиентов</p>
+              <p class="benefits__item-text">Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео отчет</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="carousel">
+    <div class="container">
+      <h2 class="title">
+        ПРИГНАННЫЕ НАМИ АВТО
+      </h2>
+      <div class="carousel__inner">
+        <div class="carousel__item">
+          <div class="carousel__item-box">
+            <a href="https://www.edmunds.com/lamborghini/aventador/" target="_blank"><img class="carousel__item-img" src="images/carousel/lambo.jpg" alt=""></a>
+            <h4 class="carousel__item-title">Lamborghini Aventador LP 780-4 2022 г.</h4>
+            <p class="carousel__item-title">Экономия 4500 $</p>
+          </div>
+        </div>
+
+        <div class="carousel__item">
+          <div class="carousel__item-box">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcarsandbids.com%2Fauctions%2FKYpn45BE%2F2018-tesla-model-3-long-range&psig=AOvVaw3ljR79XS8FsHSNB8TKARU4&ust=1671442930749000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLD4z6fwgvwCFQAAAAAdAAAAABAD" target="_blank"><img class="carousel__item-img" src="images/carousel/2.jpg" alt=""></a>
+            <h4 class="carousel__item-title"> TESLA MODEL 3 2018 г.</h4>
+            <p class="carousel__item-title">Экономия 5500 $</p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <div class="carousel__item-box">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fall-auto.org%2F203-skorostnoy-avtomobil-kotoryy-ne-ezdit-a-letaet.html&psig=AOvVaw1mTOIlxTMqLkQgGA0sMx4y&ust=1671529857674000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCJCVwJi0hfwCFQAAAAAdAAAAABAe" target="_blank"><img class="carousel__item-img" src="https://all-auto.org/wp-content/uploads/2015/04/McLaren-F1-1.jpg" alt=""></a>
+            <h4 class="carousel__item-title"> McLaren F1 1998 г.</h4>
+            <p class="carousel__item-title">Экономия 6500 $</p>
+          </div>
+        </div>
+          <div class="carousel__item">
+            <div class="carousel__item-box">
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.edmunds.com%2Finfiniti%2Fqx50%2F2016%2Freview%2F&psig=AOvVaw2nqHI2phbp4GmKKvUrV6Id&ust=1671442765290000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCPi-7tvvgvwCFQAAAAAdAAAAABAE" target="_blank"><img class="carousel__item-img" src="images/carousel/1.jpg" alt=""></a>
+              <h4 class="carousel__item-title">INFINITI QX50 2016 г.</h4>
+              <p class="carousel__item-title">Экономия 4500 $</p>
+            </div>
+          </div>
+  
+          <div class="carousel__item">
+            <div class="carousel__item-box">
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcarsandbids.com%2Fauctions%2FKYpn45BE%2F2018-tesla-model-3-long-range&psig=AOvVaw3ljR79XS8FsHSNB8TKARU4&ust=1671442930749000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCLD4z6fwgvwCFQAAAAAdAAAAABAD" target="_blank"><img class="carousel__item-img" src="images/carousel/2.jpg" alt=""></a>
+              <h4 class="carousel__item-title"> TESLA MODEL 3 2018 г.</h4>
+              <p class="carousel__item-title">Экономия 5500 $</p>
+            </div>
+          </div>
+          <div class="carousel__item">
+            <div class="carousel__item-box">
+              <a href="https://www.autotrader.com/car-news/lexus-ct-200h-good-luxurious-alternative-used-toyota-prius-281474979908765" target="_blank"><img class="carousel__item-img" src="images/carousel/3.jpg" alt=""></a>
+              <h4 class="carousel__item-title">LEXUS CT 2017 г.</h4>
+              <p class="carousel__item-title">Экономия 5500 $</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="contacts">
+    <div class="container">
+      <div class="contacts__inner">
+        <div class="contacts__info">
+          <h2 class="title">
+            КОНТАКТЫ
+          </h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__item-title">Адрес</p>
+              <p class="contacts-text">Киев, Подол<br>
+                ул. Константиновская, д.71
+              </p>  
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Время работы</p>
+              <p class="contacts-text">Пн-Сб: с 9:00 до 19:00,<br>
+                Вс: выходной</p> 
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-title">Телефон</p>
+              <p class="contacts-text">
+                +38 (050) 555 66 77
+              </p> 
+            </li>
+          </ul>
+        </div>
+
+        <form action="" class="contacts__form" id="form">
+          <h2 class="title contacts__title"> Оставить заявку</h2>
+          <input class="contacts__input _req" placeholder="Как Вас зовут?" type="text">
+          <input class="contacts__input" placeholder="Ваш номер телефона" type="tel">
+          <button class="contacts__btn button" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="logo" href="#">
+          <img class="logo_img" src="images/logo 2.svg" alt="">
+        </a>
+
+        <div class="social footer__social">
+          <a class="social__link" href="https://www.instagram.com/" target="_blank">
+            <img class="social__img" src="images/icons/instagram.svg" alt="">
+          </a>
+          <a class="social__link" href="https://web.telegram.org/" target="_blank">
+            <img class="social__img" src="images/icons/telegram.svg" alt="">
+          </a>
+          <a class="social__link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
+            <img class="social__img" src="images/icons/whatsapp.svg" alt="">
+          </a>
+          <a class="social__link" href="https://www.facebook.com/campaign/landing.php?campaign_id=1637278002&extra_1=s|c|313958888526|e|faceb|&placement=&creative=313958888526&keyword=faceb&partner_id=googlesem&extra_2=campaignid%3D1637278002%26adgroupid%3D62332989517%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-7687315026%26loc_physical_ms%3D1009827%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMI8euGmIuD_AIVTUiRBR0S7A9tEAAYASAAEgJ9LfD_BwE" target="_blank">
+            <img class="social__img" src="images/icons/facebook.svg" alt="">
+          </a>
+        </div>
+
+        <a class="footer__copy" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-3.6.2.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
